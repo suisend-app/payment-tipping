@@ -1,0 +1,12 @@
+[package]
+name = "sui_tipping"
+version = "0.0.1"
+edition = "2024"
+
+[addresses]
+tipping = "0xYOUR_ADDRESS"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "main" }
+
+[dev-dependencies]
