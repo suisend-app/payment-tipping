@@ -4,7 +4,7 @@ version = "0.0.1"
 edition = "2024"
 
 [addresses]
-tipping = "0xYOUR_ADDRESS"
+tipping = "0xe0eec66d895abc9124f416f9e32e70211ac9646ff3c0944753b2bc4635690f5b"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "main" }
