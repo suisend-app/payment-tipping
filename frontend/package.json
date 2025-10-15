@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/suisend-app/payment-tipping/tree/main",
+  "homepage": "https://github.com/suisend-app/payment-tipping",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
