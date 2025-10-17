@@ -17,10 +17,11 @@ module tipping::tipping {
         creator: address,
         _ctx: &mut TxContext
     ) {
+        // ✅ Correct: event::emit takes only ONE argument
         event::emit(TipEvent {
             amount,
             recipient,
-            creator
+            creator,
         });
     }
 
@@ -32,6 +33,7 @@ module tipping::tipping {
     ) {
         let amount = sui::coin::value(&coin);
         emit_tip_event(amount, recipient, creator, ctx);
+        // ✅ Correct: must use public_transfer
         transfer::public_transfer(coin, recipient);
     }
 }
