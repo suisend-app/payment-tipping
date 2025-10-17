@@ -4,7 +4,7 @@ version = "0.0.1"
 edition = "2024"
 
 [addresses]
-tipping = "0x3d55633c52949f93a5ca71a43251fb6b3169b96e593a091c6b82bd38fb994c17"
+tipping = "0xc6b941e27864245770d39a95305211836dbf86ce7be65c47d75ce23b32e88103"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
