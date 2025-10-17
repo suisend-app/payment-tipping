@@ -7,12 +7,4 @@ edition = "2024"
 tipping = "0x3d55633c52949f93a5ca71a43251fb6b3169b96e593a091c6b82bd38fb994c17"
 
 [dependencies]
-# Use Sui framework from the official repo; pin to main (or replace with exact commit SHA)
-Sui = { git = "https://github.com/MystenLabs/sui.git",
-        subdir = "crates/sui-framework/packages/sui-framework",
-        rev = "main" }
-
-
-[dev-dependencies]
-# Sui = { local = "../sui" }
-# some_other_package = { git = "..." }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
