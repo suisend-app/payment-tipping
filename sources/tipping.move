@@ -1,10 +1,11 @@
 module tipping::tipping {
 
-    use sui::tx_context::TxContext;
-    use sui::coin::{Self, Coin};
-    use sui::transfer;
-    use sui::event;
-    use sui::tx_context;
+   use sui::tx_context::TxContext;
+use sui::coin::Coin;
+use sui::transfer;
+use sui::object::UID;
+use sui::event;
+
 
     /// Event emitted for every successful tip
     public struct TipEvent has copy, drop {
