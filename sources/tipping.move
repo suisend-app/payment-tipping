@@ -3,7 +3,6 @@ module tipping::tipping {
     use sui::tx_context::TxContext;
     use sui::coin::Coin;
     use sui::transfer;
-    use sui::object::UID;
     use sui::event;
 
     public struct TipEvent has copy, drop {
@@ -15,7 +14,8 @@ module tipping::tipping {
     public fun emit_tip_event(
         amount: u64,
         recipient: address,
-        creator: address
+        creator: address,
+        _ctx: &mut TxContext
     ) {
         event::emit(TipEvent {
             amount,
@@ -31,7 +31,7 @@ module tipping::tipping {
         ctx: &mut TxContext
     ) {
         let amount = sui::coin::value(&coin);
-        emit_tip_event(amount, recipient, creator);
+        emit_tip_event(amount, recipient, creator, ctx);
         transfer::public_transfer(coin, recipient);
     }
 }
