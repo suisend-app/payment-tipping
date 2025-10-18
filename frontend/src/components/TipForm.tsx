@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useWallet } from '@mysten/wallet-kit'
-import { TransactionBlock } from '@mysten/sui.js'
+import { TransactionBlock } from '@mysten/sui/transactions';
 
 type Props = {
   packageId: string
