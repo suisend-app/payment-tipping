@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SuiClient, getFullnodeUrl } from '@mysten/sui.js'
+import { SuiClient } from '@mysten/sui';
 const client = new SuiClient({ url: getFullnodeUrl('mainnet') })
 
 type Props = { packageId: string }
