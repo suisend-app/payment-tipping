@@ -11,8 +11,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@mysten/sui": "^1.37.2",
-    "@mysten/wallet-kit": "latest",
+    "@mysten/sui": "^1.10.0",
+    "@mysten/wallet-kit": "^0.8.0",
     "vite": "^5.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
