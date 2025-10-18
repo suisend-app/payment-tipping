@@ -13,8 +13,8 @@
   "dependencies": {
     "@mysten/sui.js": "^0.60.0",
     "@mysten/wallet-kit": "^0.8.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite": "^5.0.0"
+    "vite": "^5.0.0", 
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
