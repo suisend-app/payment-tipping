@@ -2,7 +2,7 @@
   "name": "sui-send-frontend",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/suisend-app/payment-tipping/frontend/",
+  "homepage": "https://github.com/suisend-app/payment-tipping/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
