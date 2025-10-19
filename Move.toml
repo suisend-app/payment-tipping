@@ -1,10 +1,10 @@
 [package]
-name = "sui_tipping_no_fee"
-version = "0.0.1"
+name = "SuiSend"
+version = "0.0.2"
 edition = "2024"
 
 [addresses]
-tipping = "0x0"
+suisend = "0xc6b941e27864245770d39a95305211836dbf86ce7be65c47d75ce23b32e88103"
 
 [dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "main" }
