@@ -4,7 +4,7 @@ import { Transaction } from '@mysten/sui/transactions';
 import { Send, Loader2, CheckCircle2, XCircle, ExternalLink, Copy, Check } from 'lucide-react';
 
 // Configuration - Replace these after deploying the Move package
-const PACKAGE_ID = '0x_YOUR_PACKAGE_ID_HERE';
+const PACKAGE_ID = '0xc6b941e27864245770d39a95305211836dbf86ce7be65c47d75ce23b32e88103';
 const MODULE_NAME = 'tipping';
 
 const TippingDApp = () => {
