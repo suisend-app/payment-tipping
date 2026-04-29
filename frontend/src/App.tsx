@@ -275,8 +275,8 @@ const TippingDApp = () => {
                       <CheckCircle2 className="w-5 h-5 text-green-500" />
                       <p className="text-sm font-medium text-green-700">Tip sent successfully!</p>
                     </div>
-                    
-                      href={`https://suiscan.xyz/mainnet/tx/${txDigest}`}
+                    <a
+                      href={`https://suiscan.xyz/testnet/tx/${txDigest}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 text-sm text-green-600 hover:text-green-700"
@@ -347,3 +347,5 @@ const TippingDApp = () => {
     </div>
   );
 };
+
+export default TippingDApp;
